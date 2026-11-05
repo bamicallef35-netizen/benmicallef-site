@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamin Micallef</title>
+<meta name="description" content="A practical, 21st-century cybernetics: working machines, from Walter's tortoise to autonomy without GPS.">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <h1>Benjamin Micallef</h1>
+    <p class="meta">a practical, 21st-century cybernetics / DPhil, Oxford (cybernetics and the French avant-garde) / founder, Sentinus (autonomy without GPS) / writing on François Roche</p>
+  </header>
+
+  <section class="text">
+    <h2>thesis</h2>
+    <p class="draft">draft — for Ben to check before this page is public</p>
+    <p>The cybernetics I work from is the British work of the 1940s to 70s. Walter's tortoises (1949) showed that two sensors and two motors produce behaviour an observer reads as purposeful. Ashby's homeostat defined adaptation as a system re-selecting its own parameters until its essential variables return to range. Pask's conversation theory made learning a loop between two systems that have to agree on what they are talking about. Beer's Viable System Model specified the structure a system needs in order to keep going without outside instruction.</p>
+    <p>François Roche's practice — R&amp;Sie(n), later New-Territories and [eIf/bʌt/c] — puts the same questions to architecture: a building is a protocol run under uncertainty, its form is a consequence of the procedure and not of a drawing, and the narrative supplied to the inhabitants is part of the mechanism. That reading is mine; Roche does not cite the cyberneticians.</p>
+    <p>My engineering work at Sentinus takes the same position for vehicles that cannot use GPS: the device must classify what it senses, decide, and act with no external reference, and the record of why it acted has to be readable afterwards. The repositories below test that position one component at a time. Each one states what it can and cannot show.</p>
+  </section>
+
+  <section>
+    <h2>works</h2>
+    <ul class="rows">
+      <li>
+        <a href="https://github.com/benmicallef/umwelt-engine">umwelt-engine</a>
+        <p>A no_std Rust runtime that condenses raw sensor streams into compact, typed signs and gossips them over a GPS-free mesh.</p>
+        <p class="meta">2026 / rust, no_std, zero unsafe / 300+ tests, cross-compiles to Cortex-M4F / <a href="https://github.com/benmicallef/umwelt-engine">source</a></p>
+      </li>
+      <li>
+        <a href="https://benmicallef.github.io/grey-walter-tortoise/">grey-walter-tortoise</a>
+        <p>Walter's 1949 tortoise rebuilt as heap-free firmware, with a browser simulation proven identical to it by a parity harness.</p>
+        <p class="meta">2026 / c++, arduino, javascript / 1,115 unit checks, 14,179 parity checks / <a href="https://benmicallef.github.io/grey-walter-tortoise/">live</a> / <a href="https://github.com/benmicallef/grey-walter-tortoise">source</a></p>
+      </li>
+      <li>
+        <a href="https://benmicallef.github.io/viab/">viab</a>
+        <p>Stigmergic construction under a viability invariant: no plan, no messages, only the shared structure — after TERMES and R&amp;Sie(n).</p>
+        <p class="meta">2026 / javascript, zero dependencies / 16 tests / <a href="https://benmicallef.github.io/viab/">live</a> / <a href="https://github.com/benmicallef/viab">source</a></p>
+      </li>
+      <li>
+        <a href="https://benmicallef.github.io/colloquy/">colloquy</a>
+        <p>Agents with drives that tire of repetition: a conversation you can bore, after Pask's Musicolour and Colloquy of Mobiles.</p>
+        <p class="meta">2026 / javascript, zero dependencies / 8 tests / <a href="https://benmicallef.github.io/colloquy/">live</a> / <a href="https://github.com/benmicallef/colloquy">source</a></p>
+      </li>
+      <li>
+        <a href="https://github.com/benmicallef/viable-system-model">viable-system-model</a>
+        <p>Beer's Viable System Model and Ashby's variety arithmetic as a tested, cited Python library; it says what it can and cannot prove.</p>
+        <p class="meta">2026 / python, zero dependencies / 37 tests, mypy strict / <a href="https://github.com/benmicallef/viable-system-model">source</a></p>
+      </li>
+      <li>
+        <a href="https://github.com/benmicallef/offline-edge-node">offline-edge-node</a>
+        <p>An air-gapped inference node — local chat and retrieval over your own documents, with "offline" enforced by a guard and a test.</p>
+        <p class="meta">2026 / python, llama.cpp / 14 tests; 48.8 tokens/s measured on an M1 / <a href="https://github.com/benmicallef/offline-edge-node">source</a></p>
+      </li>
+      <li>
+        <a href="https://github.com/benmicallef/responsive-devices">responsive-devices</a>
+        <p>Six speculative cybernetic devices in the Archigram register, each tied to a parts list, a cost and an ethics note.</p>
+        <p class="meta">2026 / dossier, cc by 4.0 / <a href="https://github.com/benmicallef/responsive-devices">source</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>writing</h2>
+    <ul class="rows">
+      <li>
+        <span>François Roche and R&amp;Sie(n)</span>
+        <p>A book on the practice: protocols, uncertainty, and the machine as a way of building.</p>
+        <p class="meta">in progress / <a href="./roche/">a working, sourced chronology</a></p>
+      </li>
+      <li>
+        <span>T(e)en Years After</span>
+        <p>A translation of Roche's 2003–04 collection of texts (Les Architectures Hérétiques), introduced by Mehrad Sarmadi.</p>
+        <p class="meta">in progress / french to english</p>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>contact</h2>
+    <p class="meta"><a href="mailto:bamicallef35@gmail.com">bamicallef35@gmail.com</a> / <a href="https://github.com/benmicallef">github.com/benmicallef</a></p>
+  </section>
+
+  <footer class="colophon">
+    <p class="meta">set in IBM Plex Mono. no cookies, no tracking. <a href="https://github.com/benmicallef/benmicallef-site">source</a>. last revised 2026-11-05.</p>
+  </footer>
+</main>
+</body>
+</html>
