@@ -75,6 +75,10 @@ pre.readout { white-space: pre; border-bottom: 0; }
 .bar { display: inline-block; width: 90px; height: 6px; vertical-align: middle; background: var(--rule); position: relative; margin: 0 var(--s-2); }
 .bar > i { position: absolute; left: 0; top: 0; bottom: 0; background: var(--ink); width: 0; }
 .draft { color: var(--accent); font-family: var(--font-mono); font-size: var(--fs-0); border-top: var(--hair) solid var(--rule); border-bottom: var(--hair) solid var(--rule); padding: var(--s-2) 0; margin: var(--s-4) 0; }
+figure.sheet { margin: 0 0 var(--s-5); }
+figure.sheet figcaption { margin-top: var(--s-1); }
+.plates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); margin: 0 0 var(--s-5); }
+@media (min-width: 720px) { .plates { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 footer.colophon { margin-top: var(--s-8); border-top: var(--hair) solid var(--rule); padding-top: var(--s-3); }
 .glyph { width: 28px; height: 28px; padding: 0; font-size: 14px; line-height: 1; display: inline-grid; place-items: center; }
 
