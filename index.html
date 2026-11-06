@@ -6,12 +6,14 @@
 <title>Benjamin Micallef</title>
 <meta name="description" content="A practical, 21st-century cybernetics: working machines, from Walter's tortoise to autonomy without GPS.">
 <link rel="stylesheet" href="./style.css">
+<style>#live-plan .stage { max-height: none; } #live-plan .stage svg { display: block; width: 100%; height: auto; }</style>
 </head>
 <body>
 <main>
   <header class="site">
     <h1>Benjamin Micallef</h1>
     <p class="meta">a practical, 21st-century cybernetics / DPhil, Oxford (cybernetics and the French avant-garde) / founder, Sentinus (autonomy without GPS) / writing on François Roche</p>
+    <p class="meta"><a href="#works">works</a> / <a href="#drawings">drawings</a> / <a href="#writing">writing</a> / <a href="#contact">contact</a></p>
   </header>
 
   <section class="text">
@@ -21,7 +23,7 @@
     <p>My engineering work at Sentinus takes the same position for vehicles that cannot use GPS: the device must classify what it senses, decide, and act with no external reference, and the record of why it acted has to be readable afterwards. The repositories below test that position one component at a time. Each one states what it can and cannot show.</p>
   </section>
 
-  <section>
+  <section id="works">
     <h2>works</h2>
     <ul class="rows">
       <li>
@@ -67,8 +69,16 @@
     <p>The Roche thread of this work is a set of procedures whose output is a drawing. Each runs under stated rules — support, material, an entrance kept clear — until a form exists that nobody drew, and each exports that form as a sheet with a scale bar and a title block in the scenario format R&amp;Sie(n) used for every project: programme, area, procedure, record. <a href="https://benmicallef.github.io/viab/">viab</a> draws a section through an accretion; <em>random mode</em>, a court of rods re-stacked by a robot for years after Olzweg (2006), draws a plan; <em>humours</em>, a dwelling whose rooms grow from their inhabitants' stress, empathy and sympathy after <em>Une architecture des humeurs</em> (2010), draws a plan with its doors and the interview beside it. The last two go public in the morning. The <a href="https://benmicallef.github.io/responsive-devices/">keyring plates</a> draw the devices. All of it in ink on paper, one accent for what the rules refuse.</p>
   </section>
 
-  <section>
+  <section id="drawings">
     <h2>drawings</h2>
+    <figure class="demo" id="live-plan">
+      <div class="stage" id="plan-stage" aria-label="a plan of rooms growing either side of a corridor, live"></div>
+      <div class="controls">
+        <div class="group"><span class="lbl">live</span><button id="plan-new" aria-pressed="false">new interview</button></div>
+        <div class="group"><span class="lbl">interview</span><span id="plan-seed" class="lbl">1</span></div>
+      </div>
+      <figcaption>a dwelling plan growing from its inhabitants' humours, live in this page: the same code as <em>humours</em>, which goes public in the morning. stress encloses, calm seeks the corridor, sympathy attracts. the drawing below it is one such plan, finished, with its title block.</figcaption>
+    </figure>
     <p class="meta">sheets drawn by the procedures above, as exported from their live pages. each carries a scale bar and a title block: programme, area, procedure, record.</p>
     <figure class="sheet"><img src="./sheets/umwelt-replay.svg" alt="umwelt-engine: the Hyde Park replay drawn from the module's emissions, icons on four channel lanes, indices as ties, symbols as squares" loading="lazy"><figcaption>umwelt-engine / the Hyde Park replay, drawn from the emissions of the no_std core compiled to WebAssembly / 18 icons, 23 indices, 7 symbols</figcaption></figure>
     <figure class="sheet"><img src="./sheets/viab-section.svg" alt="viab: a section through a stigmergic accretion grown around six reserved chambers, seed 7" loading="lazy"><figcaption>viab / section, seed 7 / 1,400 units of material around six chambers</figcaption></figure>
@@ -93,7 +103,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="writing">
     <h2>writing</h2>
     <ul class="rows">
       <li>
@@ -109,14 +119,30 @@
     </ul>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>contact</h2>
     <p class="meta"><a href="mailto:bamicallef35@gmail.com">bamicallef35@gmail.com</a> / <a href="https://github.com/benmicallef">github.com/benmicallef</a></p>
   </section>
 
   <footer class="colophon">
-    <p class="meta">set in IBM Plex Mono. no cookies, no tracking. <a href="https://github.com/benmicallef/benmicallef-site">source</a>. last revised 2026-11-06, overnight; drawings added.</p>
+    <p class="meta">set in IBM Plex Mono. no cookies, no tracking. <a href="https://github.com/benmicallef/benmicallef-site">source</a>. last revised 2026-11-06, overnight; drawings and a live plan added.</p>
   </footer>
 </main>
+<script type="module">
+import { createState, step } from "./live/humours.js";
+import { planSheet } from "./live/sheet.js";
+const stage = document.getElementById("plan-stage"), seedEl = document.getElementById("plan-seed");
+const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let seed = 1, state = null, last = 0;
+function build() { state = createState({ seed }); seedEl.textContent = seed; if (still) { while (!state.finished) step(state); } draw(); }
+function draw() { stage.innerHTML = planSheet(state, { block: false, cell: 12 }); }
+function frame(now) {
+  if (!state.finished && now - last > 120) { step(state); last = now; draw(); }
+  if (state.finished && now - last > 6000) { seed = (seed % 9999) + 1; build(); last = now; }
+  requestAnimationFrame(frame);
+}
+document.getElementById("plan-new").addEventListener("click", () => { seed = (seed % 9999) + 1; build(); });
+build(); if (!still) requestAnimationFrame(frame);
+</script>
 </body>
 </html>
