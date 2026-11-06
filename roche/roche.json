@@ -1,5 +1,5 @@
 {
-  "revised": "2026-11-05",
+  "revised": "2026-11-06",
   "note": "Single source of truth for the Roche page. Only entries verified against the practice's own pages or an institutional record are marked high. Confidence: high | medium | low.",
   "practice": [
     { "year": "1993", "entry": "R&Sie founded in Paris by François Roche with Stéphanie Lavaux (partner to 2011) and Gilles Desevedavy (to 1998). Wikipedia gives 1994, after the 'Action' show at the IFA.", "source": "practice CV; CCA fonds AP193", "confidence": "high" },
