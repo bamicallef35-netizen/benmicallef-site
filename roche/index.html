@@ -39,7 +39,7 @@
 
 <noscript><p class="meta">This page renders roche.json with a few lines of script; the data file itself is the record.</p></noscript>
 <script type="module">
-const d = await (await fetch("./roche.json")).json();
+const d = await (await fetch("/roche/roche.json")).json();
 const td = (s) => { const c = document.createElement("td"); c.textContent = s || ""; return c; };
 const row = (cells) => { const tr = document.createElement("tr"); cells.forEach((c) => tr.appendChild(td(c))); return tr; };
 const body = (id) => document.querySelector(`#${id} tbody`);
