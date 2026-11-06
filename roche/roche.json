@@ -2,48 +2,277 @@
   "revised": "2026-11-06",
   "note": "Single source of truth for the Roche page. Only entries verified against the practice's own pages or an institutional record are marked high. Confidence: high | medium | low.",
   "practice": [
-    { "year": "1993", "entry": "R&Sie founded in Paris by François Roche with Stéphanie Lavaux (partner to 2011) and Gilles Desevedavy (to 1998). Wikipedia gives 1994, after the 'Action' show at the IFA.", "source": "practice CV; CCA fonds AP193", "confidence": "high" },
-    { "year": "1998–2000", "entry": "Olivier Legrand and Alexandre Boulin, partners.", "source": "practice CV", "confidence": "high" },
-    { "year": "1999–2004", "entry": "Name variants R&Sie.D/B:L (1999–2001) and R&Sie… (2001–04); R&Sie(n) from 2004.", "source": "practice CV; CCA", "confidence": "high" },
-    { "year": "2000–2007", "entry": "Jean Navarro, partner; credited on all projects of the period.", "source": "practice CV", "confidence": "high" },
-    { "year": "2007–2011", "entry": "Toshikatsu Kiuchi, partner.", "source": "practice CV; CCA", "confidence": "high" },
-    { "year": "2011", "entry": "[eIf/bʌt/c], the Institute for Contingent Scenarios, founded with Camille Lacadée; partnership to 2015. M4 / MindMachineMakingMyths is its film department; Lab M4 from 2012.", "source": "practice CV; punctum books", "confidence": "high" },
-    { "year": "2012–2022", "entry": "mythomaniaS; shown at the Chicago Architecture Biennial, 2015.", "source": "practice home page", "confidence": "high" },
-    { "year": "2016–17", "entry": "Retrospective, s/he would rather do FICTION MAKER, FRAC Centre-Val de Loire, Orléans.", "source": "Archinect; practice blog", "confidence": "medium" }
+    {
+      "year": "1993",
+      "entry": "R&Sie founded in Paris by François Roche with Stéphanie Lavaux (partner to 2011) and Gilles Desevedavy (to 1998). Wikipedia gives 1994, after the 'Action' show at the IFA.",
+      "source": "practice CV; CCA fonds AP193",
+      "confidence": "high"
+    },
+    {
+      "year": "1998–2000",
+      "entry": "Olivier Legrand and Alexandre Boulin, partners.",
+      "source": "practice CV",
+      "confidence": "high"
+    },
+    {
+      "year": "1999–2004",
+      "entry": "Name variants R&Sie.D/B:L (1999–2001) and R&Sie… (2001–04); R&Sie(n) from 2004.",
+      "source": "practice CV; CCA",
+      "confidence": "high"
+    },
+    {
+      "year": "2000–2007",
+      "entry": "Jean Navarro, partner; credited on all projects of the period.",
+      "source": "practice CV",
+      "confidence": "high"
+    },
+    {
+      "year": "2002–2015",
+      "entry": "The CCA's R&Sie(n) project records (fonds AP193): about 1,400 digital files and two models, documenting the design and the exhibition of the projects in various galleries. The finding aid dates the fonds 2002–2015 in its scope note and 2005–2015 in one other place. The CCA also records Olzweg's 2008 3-D models of the robot structure.",
+      "source": "CCA finding aid, fonds AP193",
+      "confidence": "high"
+    },
+    {
+      "year": "2007–2011",
+      "entry": "Toshikatsu Kiuchi, partner.",
+      "source": "practice CV; CCA",
+      "confidence": "high"
+    },
+    {
+      "year": "2011",
+      "entry": "[eIf/bʌt/c], the Institute for Contingent Scenarios, founded with Camille Lacadée; partnership to 2015. M4 / MindMachineMakingMyths is its film department; Lab M4 from 2012.",
+      "source": "practice CV; punctum books",
+      "confidence": "high"
+    },
+    {
+      "year": "2012–2022",
+      "entry": "mythomaniaS; shown at the Chicago Architecture Biennial, 2015.",
+      "source": "practice home page",
+      "confidence": "high"
+    },
+    {
+      "year": "2016–17",
+      "entry": "Retrospective, s/he would rather do FICTION MAKER, FRAC Centre-Val de Loire, Orléans.",
+      "source": "Archinect; practice blog",
+      "confidence": "medium"
+    }
   ],
   "projects": [
-    { "year": "2002", "title": "Hybrid Muscle", "place": "The Land, Chiang Mai, with Philippe Parreno", "entry": "Off-grid workroom; an elephant raises concrete counterweights whose descent drives a dynamo; a façade of plastic leaves with pneumatic muscles. Built. Shown at MAM Paris, June–Sept 2002.", "status": "built", "source": "practice page; Mudam", "confidence": "high" },
-    { "year": "2002", "title": "Dustyrelief / B_mu", "place": "Bangkok", "entry": "Museum for Petch Osathanugrah, ~5,000 m²; an electrostatic aluminium envelope that collects the city's airborne particles into a grey relief, with a white-cube labyrinth inside.", "status": "unbuilt", "source": "practice page; CV", "confidence": "high" },
-    { "year": "2003", "title": "Mosquito Bottleneck", "place": "Trinidad, with Mathieu Lehanneur", "entry": "House for collectors Ema and Cesar Reyes, ~130 m², 200,000 USD stated; a Klein-bottle loop keeps mosquitoes and humans in interlocking but separate circuits. Completion not confirmed.", "status": "unconfirmed", "source": "practice page; SFMOMA", "confidence": "high" },
-    { "year": "2005", "title": "I've heard about…", "place": "MAM/ARC, Musée d'Art moderne de la Ville de Paris, at the Couvent des Cordeliers, 7 July – 9 October; Kanazawa 2004–05; De Singel, Antwerp, 2006", "entry": "A city that grows by local accretion under uncertainty, scripted from inhabitants' speech and chemical signals, built in real time by a machine, the Viab, that secretes fibre-reinforced concrete by a contour-crafting process. R&Sie(n): Roche, Lavaux, Navarro, with Benoît Durandin; machines by Stephan Henrich; contour crafting after Behrokh Khoshnevis (USC).", "status": "exhibited, unbuilt", "source": "practice page; Mudam; Log 10 (2006)", "confidence": "high" },
-    { "year": "2006", "title": "Olzweg", "place": "FRAC Centre extension competition, Orléans", "entry": "A courtyard filled with recycled glass rods placed by a dispersal script; a robot in random mode stacks and re-stacks the labyrinth over more than ten years. Joint laureate; the commission went to Jakob+MacFarlane; an appeal was filed and withdrawn.", "status": "competition", "source": "practice page; CCA", "confidence": "high" },
-    { "year": "2006", "title": "Terra Incognita", "place": "with Pierre Huyghe, in Celebration Park, MAM Paris and Tate Modern", "entry": "A honeycomb-aluminium island deformed by evaporating water counterweights. A component of Huyghe's work; the film A Journey That Wasn't is Huyghe's.", "status": "exhibited", "source": "practice page; Tate", "confidence": "high" },
-    { "year": "2006–07", "title": "He shot me down", "place": "Heyri, South Korea", "entry": "Multipurpose house near the DMZ, ~2,000 m²; shooting trajectories become walkways and light; a machine on a track smears biomass over the exterior as insulation. Robotic design Stephan Henrich.", "status": "unbuilt", "source": "practice page; SFMOMA", "confidence": "high" },
-    { "year": "2007", "title": "Spidernethewood", "place": "Nîmes", "entry": "House for Urbain and Elisabeth Souriau; polypropylene mesh wrapped around planted trees so vegetation grows into a labyrinth over about five years.", "status": "built", "source": "practice page; ArchDaily", "confidence": "high" },
-    { "year": "2010", "title": "Une architecture des humeurs", "place": "Le Laboratoire, Paris, 4 rue du Bouloi, from 22 January 2010; the press text closes it on 26 April, the CCA record says May", "entry": "Visitors' body chemistry is read and interpreted as humours; the readings set deliberately uncertain protocols; recursive structural optimisation (François Jouve) generates the morphologies; components secreted by Viab02, a secretion-and-weaving machine extruding bio-cement. Computation Marc Fornes with Winston Hampel and Natanael Elfassy; robotics Stephan Henrich; physiological interview Candice Poitrey. The press text names repulsion, stress and pleasure as the situations from which housing units were conceived, and Jouve as working out dynamic structural strategies; the CCA record names sympathy and empathy, and describes Viab02's bio-cement as a mix of cement and bio-resin.", "status": "research exhibition, unbuilt", "source": "CCA; practice page", "confidence": "high" }
+    {
+      "year": "2002",
+      "title": "Hybrid Muscle",
+      "place": "The Land, Chiang Mai, with Philippe Parreno",
+      "entry": "Off-grid workroom; an elephant raises concrete counterweights whose descent drives a dynamo; a façade of plastic leaves with pneumatic muscles. Built. Shown at MAM Paris, June–Sept 2002.",
+      "status": "built",
+      "source": "practice page; Mudam",
+      "confidence": "high"
+    },
+    {
+      "year": "2002",
+      "title": "Dustyrelief / B_mu",
+      "place": "Bangkok",
+      "entry": "Museum for Petch Osathanugrah, ~5,000 m²; an electrostatic aluminium envelope that collects the city's airborne particles into a grey relief, with a white-cube labyrinth inside.",
+      "status": "unbuilt",
+      "source": "practice page; CV",
+      "confidence": "high"
+    },
+    {
+      "year": "2002–2010",
+      "title": "Water Flux",
+      "place": "to verify against the practice page",
+      "entry": "Filed by the CCA as series 1 of the R&Sie(n) records (AP193.S1), under the heading fiction as practice, which the finding aid describes as envisioning an architecture taking place in different and altered times. A related project, Scrambled Flat, is filed with it. Dates and grouping are the CCA's; the site and programme are not stated in the finding aid and are left to be verified.",
+      "status": "to verify",
+      "source": "CCA finding aid, fonds AP193",
+      "confidence": "high for the dates and grouping; the rest unverified"
+    },
+    {
+      "year": "2003",
+      "title": "Mosquito Bottleneck",
+      "place": "Trinidad, with Mathieu Lehanneur",
+      "entry": "House for collectors Ema and Cesar Reyes, ~130 m², 200,000 USD stated; a Klein-bottle loop keeps mosquitoes and humans in interlocking but separate circuits. Completion not confirmed.",
+      "status": "unconfirmed",
+      "source": "practice page; SFMOMA",
+      "confidence": "high"
+    },
+    {
+      "year": "2004–2006",
+      "title": "Hypnosis chamber",
+      "place": "filed with I've heard about",
+      "entry": "Filed by the CCA within series 2 (AP193.S2, I've heard about, 2004–2006), under the heading research as speculation. Nothing more is claimed here than the filing.",
+      "status": "to verify",
+      "source": "CCA finding aid, fonds AP193",
+      "confidence": "high for the filing; the rest unverified"
+    },
+    {
+      "year": "2005",
+      "title": "I've heard about…",
+      "place": "MAM/ARC, Musée d'Art moderne de la Ville de Paris, at the Couvent des Cordeliers, 7 July – 9 October; Kanazawa 2004–05; De Singel, Antwerp, 2006",
+      "entry": "A city that grows by local accretion under uncertainty, scripted from inhabitants' speech and chemical signals, built in real time by a machine, the Viab, that secretes fibre-reinforced concrete by a contour-crafting process. R&Sie(n): Roche, Lavaux, Navarro, with Benoît Durandin; machines by Stephan Henrich; contour crafting after Behrokh Khoshnevis (USC).",
+      "status": "exhibited, unbuilt",
+      "source": "practice page; Mudam; Log 10 (2006)",
+      "confidence": "high"
+    },
+    {
+      "year": "2006",
+      "title": "Olzweg",
+      "place": "FRAC Centre extension competition, Orléans",
+      "entry": "A courtyard filled with recycled glass rods placed by a dispersal script; a robot in random mode stacks and re-stacks the labyrinth over more than ten years. Joint laureate; the commission went to Jakob+MacFarlane; an appeal was filed and withdrawn.",
+      "status": "competition",
+      "source": "practice page; CCA",
+      "confidence": "high"
+    },
+    {
+      "year": "2006",
+      "title": "Terra Incognita",
+      "place": "with Pierre Huyghe, in Celebration Park, MAM Paris and Tate Modern",
+      "entry": "A honeycomb-aluminium island deformed by evaporating water counterweights. A component of Huyghe's work; the film A Journey That Wasn't is Huyghe's.",
+      "status": "exhibited",
+      "source": "practice page; Tate",
+      "confidence": "high"
+    },
+    {
+      "year": "2006–07",
+      "title": "He shot me down",
+      "place": "Heyri, South Korea",
+      "entry": "Multipurpose house near the DMZ, ~2,000 m²; shooting trajectories become walkways and light; a machine on a track smears biomass over the exterior as insulation. Robotic design Stephan Henrich.",
+      "status": "unbuilt",
+      "source": "practice page; SFMOMA",
+      "confidence": "high"
+    },
+    {
+      "year": "2007",
+      "title": "Spidernethewood",
+      "place": "Nîmes",
+      "entry": "House for Urbain and Elisabeth Souriau; polypropylene mesh wrapped around planted trees so vegetation grows into a labyrinth over about five years.",
+      "status": "built",
+      "source": "practice page; ArchDaily",
+      "confidence": "high"
+    },
+    {
+      "year": "2010",
+      "title": "Une architecture des humeurs",
+      "place": "Le Laboratoire, Paris, 4 rue du Bouloi, from 22 January 2010; the press text closes it on 26 April, the CCA record says May",
+      "entry": "Visitors' body chemistry is read and interpreted as humours; the readings set deliberately uncertain protocols; recursive structural optimisation (François Jouve) generates the morphologies; components secreted by Viab02, a secretion-and-weaving machine extruding bio-cement. Computation Marc Fornes with Winston Hampel and Natanael Elfassy; robotics Stephan Henrich; physiological interview Candice Poitrey. The press text names repulsion, stress and pleasure as the situations from which housing units were conceived, and Jouve as working out dynamic structural strategies; the CCA record names sympathy and empathy, and describes Viab02's bio-cement as a mix of cement and bio-resin.",
+      "status": "research exhibition, unbuilt",
+      "source": "CCA; practice page",
+      "confidence": "high"
+    }
   ],
   "texts": [
-    { "year": "1994", "title": "The Shadow of Chameleon", "entry": "", "source": "practice list", "confidence": "medium" },
-    { "year": "2003", "title": "(science)Fiction & Mass Culture Crisis", "entry": "In Architectures non standard, Centre Pompidou.", "source": "practice list", "confidence": "high" },
-    { "year": "2003–04", "title": "T(e)en Years After", "entry": "Texts on ten years of work in three periods, Biotopes, Génétiques, Jedi; introduction by Mehrad Sarmadi; French; imprint Les Architectures Hérétiques; ~130–150 pp. The practice spells the title three ways and dates it 2002, December 2003 and 1 January 2004.", "source": "practice book page; archive index", "confidence": "high" },
-    { "year": "2004", "title": "Corrupted Biotopes", "entry": "Damdi / Document Design, Seoul (DD 05); English and Korean; texts by Zeynep Mennan and Christian Horn.", "source": "practice page", "confidence": "high" },
-    { "year": "2004", "title": "R&Sie… architects. Spoiled Climate", "entry": "Birkhäuser; eds Andreas Ruby and Benoît Durandin; design M/M (Paris).", "source": "publisher", "confidence": "high" },
-    { "year": "2006", "title": "I've heard about…", "entry": "Essay in Log 10; catalogue Paris Musées 2005.", "source": "practice list", "confidence": "high" },
-    { "year": "2010", "title": "Stuttering Fall", "entry": "With Natanel Elfassy, Log 19.", "source": "practice list", "confidence": "high" },
-    { "year": "2010", "title": "(Science) Fiction, Ecophysical Apparatus and Skizoid Machines", "entry": "Architectural Design 80/6, pp. 64–71.", "source": "practice list", "confidence": "high" },
-    { "year": "2011", "title": "Une architecture des humeurs", "entry": "Mouvement / Le Laboratoire.", "source": "practice list", "confidence": "high" },
-    { "year": "2012", "title": "Log 25: Reclaim Resi[lience]stance", "entry": "Guest editor; the issue frames the stuttering between resilience and resistance.", "source": "Anyone Corporation", "confidence": "high" },
-    { "year": "2015", "title": "MythomaniaS: Crime Scenes & Psycho Case Studies", "entry": "With Camille Lacadée; punctum books, open access.", "source": "punctum books", "confidence": "high" },
-    { "year": "2018", "title": "#digitaldisobediences", "entry": "NEWT / FRAC / TARS; Log 44.", "source": "practice list", "confidence": "medium" }
+    {
+      "year": "1994",
+      "title": "The Shadow of Chameleon",
+      "entry": "",
+      "source": "practice list",
+      "confidence": "medium"
+    },
+    {
+      "year": "2003",
+      "title": "(science)Fiction & Mass Culture Crisis",
+      "entry": "In Architectures non standard, Centre Pompidou.",
+      "source": "practice list",
+      "confidence": "high"
+    },
+    {
+      "year": "2003–04",
+      "title": "T(e)en Years After",
+      "entry": "Texts on ten years of work in three periods, Biotopes, Génétiques, Jedi; introduction by Mehrad Sarmadi; French; imprint Les Architectures Hérétiques; ~130–150 pp. The practice spells the title three ways and dates it 2002, December 2003 and 1 January 2004.",
+      "source": "practice book page; archive index",
+      "confidence": "high"
+    },
+    {
+      "year": "2004",
+      "title": "Corrupted Biotopes",
+      "entry": "Damdi / Document Design, Seoul (DD 05); English and Korean; texts by Zeynep Mennan and Christian Horn.",
+      "source": "practice page",
+      "confidence": "high"
+    },
+    {
+      "year": "2004",
+      "title": "R&Sie… architects. Spoiled Climate",
+      "entry": "Birkhäuser; eds Andreas Ruby and Benoît Durandin; design M/M (Paris).",
+      "source": "publisher",
+      "confidence": "high"
+    },
+    {
+      "year": "2006",
+      "title": "I've heard about…",
+      "entry": "Essay in Log 10; catalogue Paris Musées 2005.",
+      "source": "practice list",
+      "confidence": "high"
+    },
+    {
+      "year": "2010",
+      "title": "Stuttering Fall",
+      "entry": "With Natanel Elfassy, Log 19.",
+      "source": "practice list",
+      "confidence": "high"
+    },
+    {
+      "year": "2010",
+      "title": "(Science) Fiction, Ecophysical Apparatus and Skizoid Machines",
+      "entry": "Architectural Design 80/6, pp. 64–71.",
+      "source": "practice list",
+      "confidence": "high"
+    },
+    {
+      "year": "2011",
+      "title": "Une architecture des humeurs",
+      "entry": "Mouvement / Le Laboratoire.",
+      "source": "practice list",
+      "confidence": "high"
+    },
+    {
+      "year": "2012",
+      "title": "Log 25: Reclaim Resi[lience]stance",
+      "entry": "Guest editor; the issue frames the stuttering between resilience and resistance.",
+      "source": "Anyone Corporation",
+      "confidence": "high"
+    },
+    {
+      "year": "2015",
+      "title": "MythomaniaS: Crime Scenes & Psycho Case Studies",
+      "entry": "With Camille Lacadée; punctum books, open access.",
+      "source": "punctum books",
+      "confidence": "high"
+    },
+    {
+      "year": "2018",
+      "title": "#digitaldisobediences",
+      "entry": "NEWT / FRAC / TARS; Log 44.",
+      "source": "practice list",
+      "confidence": "medium"
+    }
   ],
   "concepts": [
-    { "concept": "uncertainty, (n)certainties, permanent incompletion", "where": "the (n)certainties studios (Columbia GSAPP 2006–13; Angewandte 2008; USC 2009–11); Olzweg's ten-year construction" },
-    { "concept": "stuttering, misunderstanding", "where": "Stuttering Fall (Log 19, 2010); the 2009 Speeches from LA interview; the Log 25 call (2012)" },
-    { "concept": "scenario, fiction as practice, mythomania", "where": "every project published as a scenario with programme, area, cost, team and premise; Fiction Scripts (2006); MythomaniaS (2015)" },
-    { "concept": "machinism as procedure", "where": "the Viab (2005), Viab02 (2010), the Olzweg robot (2006), the bachelor-machine of He shot me down — prototypes and apparatuses, not deployed systems" },
-    { "concept": "humours, body chemistry read into protocols", "where": "Une architecture des humeurs (2010): a physiological interview through microneedles; I've heard about (2005): speech and chemical signals, cortisol cited" },
-    { "concept": "morphogenesis by protocol", "where": "the neighbourhood protocol of I've heard about; François Jouve's recursive optimisation (2010)" },
-    { "concept": "the exhibition as laboratory", "where": "the research exhibition at Le Laboratoire; [eIf/bʌt/c], the Institute for Contingent Scenarios" }
+    {
+      "concept": "uncertainty, (n)certainties, permanent incompletion",
+      "where": "the (n)certainties studios (Columbia GSAPP 2006–13; Angewandte 2008; USC 2009–11); Olzweg's ten-year construction"
+    },
+    {
+      "concept": "stuttering, misunderstanding",
+      "where": "Stuttering Fall (Log 19, 2010); the 2009 Speeches from LA interview; the Log 25 call (2012)"
+    },
+    {
+      "concept": "scenario, fiction as practice, mythomania",
+      "where": "every project published as a scenario with programme, area, cost, team and premise; Fiction Scripts (2006); MythomaniaS (2015)"
+    },
+    {
+      "concept": "machinism as procedure",
+      "where": "the Viab (2005), Viab02 (2010), the Olzweg robot (2006), the bachelor-machine of He shot me down — prototypes and apparatuses, not deployed systems"
+    },
+    {
+      "concept": "humours, body chemistry read into protocols",
+      "where": "Une architecture des humeurs (2010): a physiological interview through microneedles; I've heard about (2005): speech and chemical signals, cortisol cited"
+    },
+    {
+      "concept": "morphogenesis by protocol",
+      "where": "the neighbourhood protocol of I've heard about; François Jouve's recursive optimisation (2010)"
+    },
+    {
+      "concept": "the exhibition as laboratory",
+      "where": "the research exhibition at Le Laboratoire; [eIf/bʌt/c], the Institute for Contingent Scenarios"
+    }
   ],
   "not_claimed": [
     "That Roche engineered robots. The Viab, Viab02 and the Olzweg robot are scenario apparatuses, prototypes, renders and films; robotic design is Stephan Henrich's and contour crafting is Behrokh Khoshnevis's.",
