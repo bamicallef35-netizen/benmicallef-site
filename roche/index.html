@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roche, verified / Benjamin Micallef</title>
+<meta name="description" content="A working, sourced chronology of François Roche, R&Sie(n) and New-Territories, with confidence marked on every row.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+  <header class="site">
+    <h1>François Roche, R&amp;Sie(n), New-Territories — a working chronology</h1>
+    <p class="meta"><a href="../">benmicallef</a> / the public face of a book in progress / every row carries its source and a confidence mark / text only, no images (the practice's and the collections' copyright)</p>
+  </header>
+
+  <section class="text">
+    <p class="meta">a working chronology: every row carries a confidence mark, and entries are still being checked against the printed objects and the CCA finding aid (fonds AP193). Corrections welcome.</p>
+    <p>The practice's own archive at new-territories.com is complete and dated, and that is where its authority comes from. This page keeps the same discipline: dates as the practice and the institutions give them, the alternative in a note where sources disagree, and a confidence mark on each row. Nothing here is quoted at length; short attributed phrases only.</p>
+  </section>
+
+  <section id="practice"><h2>the practice</h2><table><thead><tr><th>year</th><th>entry</th><th>source</th><th>confidence</th></tr></thead><tbody></tbody></table></section>
+  <section id="projects"><h2>projects</h2><table><thead><tr><th>year</th><th>project</th><th>what was proposed</th><th>status</th><th>source</th><th>confidence</th></tr></thead><tbody></tbody></table></section>
+  <section id="texts"><h2>texts</h2><table><thead><tr><th>year</th><th>title</th><th>note</th><th>source</th><th>confidence</th></tr></thead><tbody></tbody></table></section>
+  <section id="concepts"><h2>concepts, and where each is verified</h2><ul class="rows"></ul></section>
+  <section id="repos" class="text">
+    <h2>how the repositories relate</h2>
+    <ul class="text-list">
+      <li><strong>viab</strong> borrows the name of the building machine of <em>I've heard about…</em> (2005) with attribution, and the precedent of Olzweg (2006) as building by an open-ended stacking procedure. Its deposition rules follow TERMES (Werfel, Petersen and Nagpal, 2014). It does not model body chemistry or humours.</li>
+      <li><strong>colloquy</strong> cites <em>Une architecture des humeurs</em> (2010) as a case of physiology treated as the input side of a design loop; its own loop is Pask's conversation, and it does not read or model physiology.</li>
+      <li><strong>grey-walter-tortoise</strong>, <strong>offline-edge-node</strong> and <strong>umwelt-engine</strong> list Roche as reading at most, in one line each; their claims stand on Walter and on engineering constraints.</li>
+      <li><strong>viable-system-model</strong> makes no Roche reference: Beer's management cybernetics has no documented connection to the practice, and any link would be invented.</li>
+    </ul>
+  </section>
+  <section id="not-claimed" class="text"><h2>not claimed</h2><ul class="text-list"></ul></section>
+
+  <footer class="colophon"><p class="meta" id="colophon">source: roche.json in the site repository.</p></footer>
+</main>
+
+<noscript><p class="meta">This page renders roche.json with a few lines of script; the data file itself is the record.</p></noscript>
+<script type="module">
+const d = await (await fetch("/roche/roche.json")).json();
+const td = (s) => { const c = document.createElement("td"); c.textContent = s || ""; return c; };
+const row = (cells) => { const tr = document.createElement("tr"); cells.forEach((c) => tr.appendChild(td(c))); return tr; };
+const body = (id) => document.querySelector(`#${id} tbody`);
+for (const e of d.practice) body("practice").appendChild(row([e.year, e.entry, e.source, e.confidence]));
+for (const e of d.projects) body("projects").appendChild(row([e.year, e.title + " — " + e.place, e.entry, e.status, e.source, e.confidence]));
+for (const e of d.texts) body("texts").appendChild(row([e.year, e.title, e.entry, e.source, e.confidence]));
+const cl = document.querySelector("#concepts ul");
+for (const c of d.concepts) { const li = document.createElement("li"); li.innerHTML = `<span>${c.concept}</span><p class="meta">${c.where}</p>`; cl.appendChild(li); }
+const nl = document.querySelector("#not-claimed ul");
+for (const n of d.not_claimed) { const li = document.createElement("li"); li.textContent = n; nl.appendChild(li); }
+document.getElementById("colophon").textContent = `source: roche.json in the site repository. last revised ${d.revised}.`;
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Benjamin Micallef</title>
+<meta name="description" content="A practical, 21st-century cybernetics: working machines, from Walter's tortoise to autonomy without GPS.">
+<link rel="stylesheet" href="./style.css">
+<style>#live-plan .stage { max-height: none; } #live-plan .stage svg { display: block; width: 100%; height: auto; }</style>
+</head>
+<body>
+<main>
+  <header class="site">
+    <h1>Benjamin Micallef</h1>
+    <p class="meta">a practical, 21st-century cybernetics / DPhil, Oxford (cybernetics and the French avant-garde) / founder, Sentinus (autonomy without GPS) / writing on François Roche</p>
+    <p class="meta"><a href="#works">works</a> / <a href="#drawings">drawings</a> / <a href="#writing">writing</a> / <a href="#contact">contact</a></p>
+  </header>
+
+  <section class="text">
+    <h2>thesis</h2>
+    <p>The cybernetics I work from is the British work of the 1940s to 70s. Walter's tortoises (1949) showed that two sensors and two motors produce behaviour an observer reads as purposeful. Ashby's homeostat defined adaptation as a system re-selecting its own parameters until its essential variables return to range. Pask's conversation theory made learning a loop between two systems that have to agree on what they are talking about. Beer's Viable System Model specified the structure a system needs in order to keep going without outside instruction.</p>
+    <p>François Roche's practice (R&amp;Sie(n), later New-Territories and [eIf/bʌt/c]) puts the same questions to architecture: a building is a protocol run under uncertainty, its form is a consequence of the procedure and not of a drawing, and the narrative supplied to the inhabitants is part of the mechanism. That reading is mine; Roche does not cite the cyberneticians.</p>
+    <p>My engineering work at Sentinus takes the same position for vehicles that cannot use GPS: the device must classify what it senses, decide, and act with no external reference, and the record of why it acted has to be readable afterwards. The repositories below test that position one component at a time.</p>
+  </section>
+
+  <section id="works">
+    <h2>works</h2>
+    <ul class="rows">
+      <li>
+        <a href="https://github.com/bamicallef35-netizen/umwelt-engine">umwelt-engine</a>
+        <p>A no_std Rust runtime that condenses raw sensor streams into compact, typed signs and gossips them over a GPS-free mesh.</p>
+        <p class="meta">2026 / rust, no_std, zero unsafe / 300+ tests, cross-compiles to Cortex-M4F; the core runs in the browser as WebAssembly / <a href="https://bamicallef35-netizen.github.io/umwelt-engine/">live</a> / <a href="https://github.com/bamicallef35-netizen/umwelt-engine">source</a></p>
+      </li>
+      <li>
+        <a href="https://bamicallef35-netizen.github.io/grey-walter-tortoise/">grey-walter-tortoise</a>
+        <p>Walter's 1949 tortoise rebuilt as heap-free firmware, with a browser simulation proven identical to it by a parity harness.</p>
+        <p class="meta">2026 / c++, arduino, javascript / 1,115 unit checks, 14,179 parity checks / <a href="https://bamicallef35-netizen.github.io/grey-walter-tortoise/">live</a> / <a href="https://github.com/bamicallef35-netizen/grey-walter-tortoise">source</a></p>
+      </li>
+      <li>
+        <a href="https://bamicallef35-netizen.github.io/viab/">viab</a>
+        <p>A generative architecture: stigmergic accretion under a viability invariant, from a finite material budget, that finishes as a building section and exports it as a drawing sheet, after TERMES and R&amp;Sie(n).</p>
+        <p class="meta">2026 / javascript, zero dependencies / 20 tests / <a href="https://bamicallef35-netizen.github.io/viab/">live</a> / <a href="https://github.com/bamicallef35-netizen/viab">source</a></p>
+      </li>
+      <li>
+        <a href="https://bamicallef35-netizen.github.io/random-mode/">random-mode</a>
+        <p>A robot re-stacking glass rods at random for years under a support rule, after Olzweg (2006): a court whose final form the software cannot know, drawn as a plan and over ten years.</p>
+        <p class="meta">2026 / javascript, zero dependencies / 11 tests / <a href="https://bamicallef35-netizen.github.io/random-mode/">live</a> / <a href="https://github.com/bamicallef35-netizen/random-mode">source</a></p>
+      </li>
+      <li>
+        <a href="https://bamicallef35-netizen.github.io/humours/">humours</a>
+        <p>A dwelling plan grown from its inhabitants' stress, empathy and sympathy, after <em>Une architecture des humeurs</em> (2010): rooms claim their cells by rules their humours bias, under a structural depth and an access invariant, and the plan is drawn with its doors and the interview.</p>
+        <p class="meta">2026 / javascript, zero dependencies / 9 tests / <a href="https://bamicallef35-netizen.github.io/humours/">live</a> / <a href="https://github.com/bamicallef35-netizen/humours">source</a></p>
+      </li>
+      <li>
+        <a href="https://bamicallef35-netizen.github.io/colloquy/">colloquy</a>
+        <p>Agents with drives that tire of repetition: a conversation you can bore, after Pask's Musicolour and Colloquy of Mobiles.</p>
+        <p class="meta">2026 / javascript, zero dependencies / 9 tests / <a href="https://bamicallef35-netizen.github.io/colloquy/">live</a> / <a href="https://github.com/bamicallef35-netizen/colloquy">source</a></p>
+      </li>
+      <li>
+        <a href="https://bamicallef35-netizen.github.io/viable-system-model/">viable-system-model</a>
+        <p>Beer's Viable System Model and Ashby's variety arithmetic as a tested, cited Python library.</p>
+        <p class="meta">2026 / python, zero dependencies / 42 tests, mypy strict / <a href="https://bamicallef35-netizen.github.io/viable-system-model/">live: the library's own output</a> / <a href="https://github.com/bamicallef35-netizen/viable-system-model">source</a></p>
+      </li>
+      <li>
+        <a href="https://github.com/bamicallef35-netizen/offline-edge-node">offline-edge-node</a>
+        <p>An air-gapped inference node: local chat and retrieval over your own documents, with "offline" enforced by a guard and a test.</p>
+        <p class="meta">2026 / python, llama.cpp / 18 tests; 48.8 tokens/s measured on an M1 / <a href="https://github.com/bamicallef35-netizen/offline-edge-node">source</a></p>
+      </li>
+      <li>
+        <a href="https://bamicallef35-netizen.github.io/responsive-devices/">responsive-devices</a>
+        <p>Six speculative cybernetic devices in the Archigram register, plus eight keyring senses you can build for £3–15, each tied to a parts list, a cost and an ethics note, with firmware and drawn plates.</p>
+        <p class="meta">2026 / dossier, cc by 4.0; sketches MIT / <a href="https://bamicallef35-netizen.github.io/responsive-devices/">plates</a> / <a href="https://github.com/bamicallef35-netizen/responsive-devices">source</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="text">
+    <h2>generative architectures</h2>
+    <p>The Roche thread of this work is a set of procedures whose output is a drawing. Each runs under stated rules (support, material, an entrance kept clear) until a form exists that nobody drew, and each exports that form as a sheet with a scale bar and a title block in the scenario format R&amp;Sie(n) used for every project: programme, area, procedure, record. <a href="https://bamicallef35-netizen.github.io/viab/">viab</a> draws a section through an accretion; <a href="https://bamicallef35-netizen.github.io/random-mode/">random mode</a>, a court of rods re-stacked by a robot for years after Olzweg (2006), draws a plan; <a href="https://bamicallef35-netizen.github.io/humours/">humours</a>, a dwelling whose rooms grow from their inhabitants' stress, empathy and sympathy after <em>Une architecture des humeurs</em> (2010), draws a plan with its doors and the interview beside it. The <a href="https://bamicallef35-netizen.github.io/responsive-devices/">keyring plates</a> draw the devices. All of it in ink on paper, one accent for what the rules refuse.</p>
+  </section>
+
+  <section id="drawings">
+    <h2>drawings</h2>
+    <figure class="demo" id="live-plan">
+      <div class="stage" id="plan-stage" aria-label="a plan of rooms growing either side of a corridor, live"></div>
+      <div class="controls">
+        <div class="group"><span class="lbl">live</span><button id="plan-new" aria-pressed="false">new interview</button></div>
+        <div class="group"><span class="lbl">interview</span><span id="plan-seed" class="lbl">1</span></div>
+      </div>
+      <figcaption>a dwelling plan growing from its inhabitants' humours, live in this page: the same code as <a href="https://bamicallef35-netizen.github.io/humours/">humours</a>. stress encloses, calm seeks the corridor, sympathy attracts. the drawing below it is one such plan, finished, with its title block.</figcaption>
+    </figure>
+    <p class="meta">sheets drawn by the procedures above, as exported from their live pages. each carries a scale bar and a title block: programme, area, procedure, record.</p>
+    <figure class="sheet"><img src="./sheets/umwelt-replay.svg" alt="umwelt-engine: the Hyde Park replay drawn from the module's emissions, icons on four channel lanes, indices as ties, symbols as squares" loading="lazy"><figcaption>umwelt-engine / the Hyde Park replay, drawn from the emissions of the no_std core compiled to WebAssembly / 18 icons, 23 indices, 7 symbols</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/viab-section.svg" alt="viab: a section through a stigmergic accretion grown around six reserved chambers, seed 7" loading="lazy"><figcaption>viab / section, seed 7 / 1,400 units of material around six chambers</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/viab-humours.svg" alt="viab: nine finished sections, three seeds under three humours" loading="lazy"><figcaption>viab / nine sections: three seeds under the seeded stream, stress held, calm held / the same material, the same rules</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/random-mode-plan.svg" alt="random mode: plan of a court of glass rods re-stacked by a robot, seed 3" loading="lazy"><figcaption>random mode / plan, seed 3 / the court after twenty thousand steps of the robot, the entrance kept clear</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/random-mode-years.svg" alt="random mode: the same court at the dispersal, a week, a month, a year, three years and ten years of moves" loading="lazy"><figcaption>random mode / the court over time, seed 3 / from the dispersal to ten years of moves, one an hour</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/humours-plan.svg" alt="humours: plan of six rooms grown from their inhabitants' humours either side of a corridor, seed 1" loading="lazy"><figcaption>humours / plan, seed 1 / six rooms, their doors, and the interview</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/humours-multitude.svg" alt="humours: a contact sheet of twelve plans from twelve interviews" loading="lazy"><figcaption>humours / a multitude: twelve plans from twelve interviews, the same rules, different humours</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/vsm.svg" alt="viable-system-model: the factory example drawn by the library, the recursion as nested frames with each level's five functions, requisite variety per plant, and the alarm's route to System 5" loading="lazy"><figcaption>viable-system-model / the factory example, drawn by the library from its own objects / Plant South short by two bits; one alarm routed to System 5</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/offline-edge-node-plate.svg" alt="offline-edge-node as a plate: six layers inside an air gap, the setup-only crossing, and three hardware tiers" loading="lazy"><figcaption>offline-edge-node / six layers inside an air gap, the one setup-time crossing, and three hardware tiers from £0 to about £300, each figure marked measured or sourced</figcaption></figure>
+    <figure class="sheet"><img src="./sheets/colloquy-score.svg" alt="colloquy: one conversation drawn as a score, a lane per agent and one for the viewer" loading="lazy"><figcaption>colloquy / a score, seed 1, 720 ticks / a scripted viewer repeats one class until the answerers tire of it, then changes it</figcaption></figure>
+    <p class="meta">eight keyring senses from the <a href="https://bamicallef35-netizen.github.io/responsive-devices/">responsive-devices</a> dossier, £3–15 each in parts, each with its firmware. plates drawn by the same tooling.</p>
+    <div class="plates">
+      <img src="./plates/01-lodestone.svg" alt="plate 01, lodestone: a keyring that points north by vibration" loading="lazy">
+      <img src="./plates/02-ultraviolet.svg" alt="plate 02, ultraviolet: a keyring that reads the UV index" loading="lazy">
+      <img src="./plates/03-heat.svg" alt="plate 03, heat: a keyring that senses radiant heat" loading="lazy">
+      <img src="./plates/04-bat.svg" alt="plate 04, bat: a keyring that hears ultrasound" loading="lazy">
+      <img src="./plates/05-polar.svg" alt="plate 05, polar: a keyring that reads the polarisation of skylight" loading="lazy">
+      <img src="./plates/06-radio.svg" alt="plate 06, radio: a keyring that feels the radio field" loading="lazy">
+      <img src="./plates/07-tremor.svg" alt="plate 07, tremor: a keyring that senses ground vibration" loading="lazy">
+      <img src="./plates/08-lumen.svg" alt="plate 08, lumen: a keyring that reads light flicker" loading="lazy">
+    </div>
+  </section>
+
+  <section id="writing">
+    <h2>writing</h2>
+    <ul class="rows">
+      <li>
+        <span>François Roche and R&amp;Sie(n)</span>
+        <p>A book on the practice: protocols, uncertainty, and the machine as a way of building.</p>
+        <p class="meta">in progress / <a href="./roche/">a working, sourced chronology</a></p>
+      </li>
+      <li>
+        <span>T(e)en Years After</span>
+        <p>A translation of Roche's 2003–04 collection of texts (Les Architectures Hérétiques), introduced by Mehrad Sarmadi.</p>
+        <p class="meta">in progress / french to english</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>contact</h2>
+    <p class="meta"><a href="mailto:bamicallef35@gmail.com">bamicallef35@gmail.com</a> / <a href="https://github.com/bamicallef35-netizen">github.com/bamicallef35-netizen</a></p>
+  </section>
+
+  <footer class="colophon">
+    <p class="meta">set in IBM Plex Mono. no cookies, no tracking. <a href="https://github.com/bamicallef35-netizen/benmicallef-site">source</a>. last revised 2026-11-09.</p>
+  </footer>
+</main>
+<script type="module">
+import { createState, step } from "./live/humours.js";
+import { planSheet } from "./live/sheet.js";
+const stage = document.getElementById("plan-stage"), seedEl = document.getElementById("plan-seed");
+const still = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let seed = 1, state = null, last = 0;
+function build() { state = createState({ seed }); seedEl.textContent = seed; if (still) { while (!state.finished) step(state); } draw(); }
+function draw() { stage.innerHTML = planSheet(state, { block: false, cell: 12 }); }
+function frame(now) {
+  if (!state.finished && now - last > 120) { step(state); last = now; draw(); }
+  if (state.finished && now - last > 6000) { seed = (seed % 9999) + 1; build(); last = now; }
+  requestAnimationFrame(frame);
+}
+document.getElementById("plan-new").addEventListener("click", () => { seed = (seed % 9999) + 1; build(); });
+build(); if (!still) requestAnimationFrame(frame);
+</script>
+</body>
+</html>
